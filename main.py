@@ -43,8 +43,7 @@
 #
 # print(a + ' ' + b)
 
-
-
-
+sample_string = 'Hello world'
+print(sample_string)
 
 
