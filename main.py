@@ -23,5 +23,28 @@
 # print(type(a / b))
 
 
-sample_string = 'Hello world'
-print(sample_string)
+# sample_string = 'Hello world'
+# print(sample_string)
+
+# string_sample = 'Hello world'
+# print(string_sample[10])
+
+#
+# empty_string = ''
+# string_sample = "Hello world"
+# string_sample2 = "first letteR is lowErcase"
+# string_sample3 = " extra whitespace string "
+#
+# print(string_sample.upper())
+
+#
+# a = 'Hello'
+# b = 'world'
+#
+# print(a + ' ' + b)
+
+
+
+
+
+
