@@ -153,10 +153,150 @@
 # print('world' in string_sample)   # Осуществляется прооверка существует ли такое слово в данной строке
 #
 
-a = 'Hello'
-b = 'world'
-print(a + ' ' + b)  #Без пробела в апострофе слова сольются
-print(a + ' ' + 'planet')  # Не только переменные но и слова
+# a = 'Hello'
+# b = 'world'
+# print(a + ' ' + b)  #Без пробела в апострофе слова сольются
+# print(a + ' ' + 'planet')  # Не только переменные но и слова
+
+#
+# name = 'Shimi'
+# age = 2
+# profession = 'dog'
+#
+# print('Hello ' + name + '. Your age ' + str(age) + '. Yor are ' + profession + '.')
+
+# name = 'Zina'
+# salary = 2500
+# string_sample = "Zina's salary is {}"
+# print(string_sample.format(salary))
+
+
+# string_sample = "This {product:} costs {price:} euros"
+# print(string_sample.format(price=350, product="Computer"))
+
+#
+# string_sample = "This {product:} costs {price:.2f} euros"   #.2f 2 цыфры после .
+# print(string_sample.format(price=350, product="Computer"))
+#
+# emp_name = 'Zina'
+# emp_age = 43
+# emp_salary = 2500
+#
+# emp_string = f'Hi, my name is {emp_name}! I  am {emp_age} old. My salary is {emp_salary:.2f}'    # Где .2f означают что 2 цыфры осле точки зарплаты а f вначаде строки значит что строка форматированная
+# print(emp_string)
+
+# # байтовые строки код, иероглифы и тд
+# byte_string = b'\xcf\x84o\xcf\x81\xce\xbdo\xcf\x82'
+# print(byte_string.decode('utf-16'))
 
 
 
+# Управляющие конструкции
+
+# number = 200
+# if number == 200:    #где == сравнение где if "если" а нок "то"
+#     print('OK')
+# else:
+#     print('NOK')
+#
+
+# number = 200
+# if number == 200:                # Усли число = 200 напиши тото а если (2 если) то тото
+#     print('Nuber is equal to 100')
+# elif number < 100:
+#     print('Number is smaller than 100')
+# else:
+#     print('NOK')
+
+# number = 100
+#
+# if number == 200:
+#     print('Nuber is equal to 200')
+# elif number < 100:
+#     print('Number is smaller than 100')
+# elif number % 2 == 0:         # если остаток при делении на 2 не равен нулю то напечатай
+#     print('Whole number')
+#
+# else:
+#     print('NOK')
+
+
+# number = 90    # тут остановится только на первом правильном дальше не будет смотреть
+# # все проверхи сверху вниз как находит первое то останавливается
+# if number == 200:
+#     print('Nuber is equal to 200')
+# elif number < 100:
+#     print('Number is smaller than 100')
+# elif number % 2 == 0:
+#     print('Whole number')
+#
+# else:
+#     print('NOK')
+
+
+# number = 90
+# if number == 200:
+#     print('Nuber is equal to 200')
+#
+# elif number < 100:
+#     print('Number is smaller than 100')
+#     if number % 2 == 0:
+#      print('число равно нулю')     # если строка ближе к началу то не выполняется
+#
+# else:
+#     print('NOK')
+
+
+# sample_string = 'Hello wo'
+# if len(sample_string) >10:   #если строка ровна 11 символам то напиши а если короче то напиши
+#
+#     print('Long string')
+# else:
+#    print('Short string')
+
+# id_code = input('Please enter your national id: ')
+# if len(id_code)==11:
+#     print('Your ID code is', id_code)
+# elif len(id_code) > 11:
+#     print('Код длинннее')
+# else:
+#     print('Код короче')
+#
+# word = input('введите слово')
+# if len(word)=
+
+
+# def reverse(text):
+#     return text[::-1]
+#
+# def is_palindrome(text):
+#     return text == reverse(text)
+#
+# something = input('Введите текст: ')
+# if(is_palindrome(something)):
+#     print('это палиндром')
+
+
+# str_text = input('Enter text: ')
+# str_text = str_text.replace(" ", "")
+# str_text = str_text.replace(",", "")
+# str_text = str_text.replace(":", "")
+# str_text = str_text.replace("!", "")
+# str_text = str_text.replace("?", "")
+# str_text = str_text.replace(";", "")
+# str_text = str_text.replace(".", "")
+# str_text = str_text.lower()
+# str_text2 = str_text[::-1]
+# if str_text == str_text2:
+#     print('It\'s palindrom')
+# else:
+#     print('It\'s not palindrom')
+
+id_code = input('Введите исикукод: ')
+
+if len(id_code) == 11:
+    print('Ваш исикукод', id_code)
+elif len(id_code) > 11:
+    print('Код длиннее 11 цифр, введите заново')
+else:
+    print('Код короче 11 цифр, введите заново')
