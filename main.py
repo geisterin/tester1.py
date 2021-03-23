@@ -292,11 +292,94 @@
 # else:
 #     print('It\'s not palindrom')
 
-id_code = input('Введите исикукод: ')
+# id_code = input('Введите исикукод: ')
+#
+# if len(id_code) == 11:
+#     print('Ваш исикукод', id_code)
+# elif len(id_code) > 11:
+#     print('Код длиннее 11 цифр, введите заново')
+# else:
+#     print('Код короче 11 цифр, введите заново')
 
-if len(id_code) == 11:
-    print('Ваш исикукод', id_code)
-elif len(id_code) > 11:
-    print('Код длиннее 11 цифр, введите заново')
-else:
-    print('Код короче 11 цифр, введите заново')
+#*************    УРОК 4 ***************************
+
+#
+# user_input = input('Please enter palendrome: ').lower()().replace(' ','').replace(',','').replace('.','')
+# if user_input== user_input[::-1]:
+#     print('Это палендром')
+#
+# some_string = 'Never odd. or even'
+# print(some_string.split())
+#
+
+
+# empty_list = []
+# # print(type(empty_list))
+#
+# world = 'world'
+#
+# some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
+#
+# print(some_list[2]) = 'Planet'
+# print(some_list)
+# some_list
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses.append('Art')
+# courses.insert(1, 'Engliish')
+#
+#
+# print(courses)
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses2 = ['Art','English']
+# courses/extend(courses2)
+# print(courses)
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses.remove('Math')
+# print(courses)
+
+# deleted = courses.pop(0)
+# print(courses)
+# print(deleted)
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# print(courses)
+# courses.reverse()
+# print(courses)
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+#
+# print(list(reversed(courses)))
+# print(courses)
+# print(courses[::-1])
+# print(courses)
+
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# numbers = [1, 4, 6, 8, 2, 3]
+# courses.sort()
+# print(courses)
+#
+# numbers.sort()
+# print(numbers)
+
+# courses = (' History', 'Programming', 'Nath', 'Literature', 'Physics')
+#
+# courses.count('History')
+#
+#
+# x = 5
+# student = {'name': 'John', 'age':32, 'courses': ['Math', 'Art', 'Programming'],
+#            1: 'int key', 0.2: 'float key', x: 'variable', 'var key': x}
+# some_set = {'Art', 'Math'}
+# print(student['age'])
+
+
+# people =['Зина', 'Ира', 'Катя', 'Маша']     #как сделать выборочно не по очереди?
+# for person in people:
+#     print(person)
+
+
+
+
