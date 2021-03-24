@@ -301,6 +301,9 @@
 # else:
 #     print('Код короче 11 цифр, введите заново')
 
+user_input = input('Введите слово: ').lower().replace(' ','').replace(',','').replace('.','').replace('!','').replace('?','')
+print(user_input)
+
 #*************    УРОК 4 ***************************
 
 #
