@@ -300,44 +300,43 @@
 #     print('Код длиннее 11 цифр, введите заново')
 # else:
 #     print('Код короче 11 цифр, введите заново')
-
-user_input = input('Введите слово: ').lower().replace(' ','').replace(',','').replace('.','').replace('!','').replace('?','')
-print(user_input)
+#
 
 #*************    УРОК 4 ***************************
 
+
+# user_input = input('Please enter palendrome: ').lower().replace(' ', '').replace(',', '').replace('.', '').replace('!', '')
 #
-# user_input = input('Please enter palendrome: ').lower()().replace(' ','').replace(',','').replace('.','')
 # if user_input== user_input[::-1]:
 #     print('Это палендром')
-#
-# some_string = 'Never odd. or even'
-# print(some_string.split())
-#
 
 
-# empty_list = []
-# # print(type(empty_list))
-#
-# world = 'world'
-#
-# some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
-#
-# print(some_list[2]) = 'Planet'
-# print(some_list)
+empty_list = []
+print(type(empty_list))
+
+world = 'world'
+
+some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
+# print(len(some_list))   #Посчитать количество участников списка
+# print(some_list[2]) = 'Planet'    #Можно заменить любые данные в списке (переназначить)
+# print(some_list[-3])  # выводит определённую позицию списка  если надо с конца считается с -1
+# print(some_list[1:5])   #выводит срез списка с 1 по пятый но на деле с 2го по 4й так каа нумерация с 0
+# print(some_list[1:5:2])  #где 2 это шаг через сколько брать срез
+# print(some_list[::-1])    #печатает весть список в обратном порядке
 # some_list
-
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
-# courses.append('Art')
-# courses.insert(1, 'Engliish')
 #
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses.append('Art')   # метод append добаляет  элементы в конец списка
+# courses.insert(1, 'Engliish')   #inser добаляет на указанную позицию элемент
+# print(len(courses))      #len пишет длину списка
 #
 # print(courses)
 
 # courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
 # courses2 = ['Art','English']
-# courses/extend(courses2)
+# courses.extend(courses2)   #extend расширяет список в конце
 # print(courses)
+
 
 # courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
 # courses.remove('Math')
