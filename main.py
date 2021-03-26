@@ -311,12 +311,12 @@
 #     print('Это палендром')
 
 
-empty_list = []
-print(type(empty_list))
-
-world = 'world'
-
-some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
+# empty_list = []
+# print(type(empty_list))
+#
+# world = 'world'
+#
+# some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
 # print(len(some_list))   #Посчитать количество участников списка
 # print(some_list[2]) = 'Planet'    #Можно заменить любые данные в списке (переназначить)
 # print(some_list[-3])  # выводит определённую позицию списка  если надо с конца считается с -1
@@ -334,36 +334,46 @@ some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
 
 # courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
 # courses2 = ['Art','English']
-# courses.extend(courses2)   #extend расширяет список в конце
+# courses.extend(courses2)             #extend расширяет список в конце
 # print(courses)
 
+#
+# courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
+# courses.remove('Math')               # Удаляет из списка математику  remove не запоминает что удалил, не удаляет по названию'Match' а только по порядковому номеру
+# print(courses)
+#
+# deleted = courses.pop(0)                   # Если в скобках не ставить порядковый номер то удаляет последний
+# print(courses)
+# print(deleted)            # метод *pop* запоминает что удалил
 
 # courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
-# courses.remove('Math')
-# print(courses)
-
-# deleted = courses.pop(0)
-# print(courses)
-# print(deleted)
-
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
-# print(courses)
+# print(courses)                  #Печатает список в обратном порядке
 # courses.reverse()
 # print(courses)
 
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
-#
-# print(list(reversed(courses)))
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
 # print(courses)
-# print(courses[::-1])
+# courses.reverse()        #Все элементы записывает в обратно порядке и сохраняет список в развёрнутом виде
+# print(courses)
+
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
+# print(courses[0])                   #печатает 1 порядковый номер списка т потом первый номер изменённого списка*перевёрнутого-
+# courses.reverse()
+# print(courses[0])
+
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
+#
+# print(list(reversed(courses)))      #разворачивает список или строку, не сохраняет
+# print(courses)
+# print(courses[::-1])    #print(list(reversed(courses))) эдентичный способ этому
 # print(courses)
 
 # courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
 # numbers = [1, 4, 6, 8, 2, 3]
-# courses.sort()
-# print(courses)
-#
-# numbers.sort()
+# courses.sort()     #Сортирует списки из строк в алфавитном порядке
+# print(courses)           # corses.sort(reverse=True) #сортирует в обратном порядке по алфавиту
+
+# numbers.sort()    #Сортирует по порядковому номеру
 # print(numbers)
 
 # courses = (' History', 'Programming', 'Nath', 'Literature', 'Physics')
@@ -382,6 +392,87 @@ some_list = [123, 0.123, 'Hello', world, True, [1,23,0.434], None]
 # for person in people:
 #     print(person)
 
+#
+# ******************************     5урок               ***************
+#
+#
+# for num in range(1, 101):
+#     if num % 3 ==0: and num % 5 == 0:     # не доделала доделать!!!!!!!
+#     print(num, "FizzBuzz")
+#     eli
+#         print(num, 'Fizz')
+#     elif num % 5 == 0:
+#         print(num, 'Buzz')
+#     elif num % 3 ==0 and num % 5 ==0:
 
 
+#
+# while True:                  # бесконечная прога
+#     print('I can\'t stop')
+# condition = True
+# cnt = 0
+# while condition:
+#     if cnt < 1000:
+#         print(cnt)
+#         cnt = cnt + 1
+#     elif cnt ==1000:
+#         condition = False
+#
+#         print('Конец')
+# #
+#
+# condition = True
+#
+# while condition:
+#    user_iput = input('Choiose:\n1: Chek ID\n2: Exit|n--> ')
+#    if user_iput == '1':
+#        input_id = input('Please enter ID')
+#        if len(input_id) != 11:
+#            print('Error')
+#        else:
+#            print(input_id)
+#            condition = False
+#        elif user_iput == '2':
+#            condition = False
+#            print('Finished')
 
+
+# distance_to_target = float(input('Please enter distance in meeters:'))
+# current_position = 0
+# step = 0
+# while current_position = current_position + 0.5
+#     step_cnt = step_cnt +1
+#     print(current_position)
+#
+# print('Finished')
+# #
+
+#
+# some_string = 'Hello world'
+#
+# print(list(some_string))
+
+
+# user_input = input('Введите число')
+# result = float(user_input ** 2
+# print(result)
+
+#
+# def user_menu():
+#     user_choce = input('Please choose:\n1.Get data by ID code\n/Chec if ID is valid\n3.Exit\n-->')
+#     if user_choce =='1':
+#         try:
+#             user_id = int(input('Please enter ID: '))
+#             if len(user_id) != 11:
+#                 raise UserWarning
+#
+#     elif user_choce =='2':
+#         pass
+#     elif user_choce =='3':
+#         quit()
+#     else:
+#         print('Choise out of range')
+#         user_menu()
+#
+#         def get_data_by_id(idcode):
+#             print(idcode)
