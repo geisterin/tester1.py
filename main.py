@@ -379,8 +379,39 @@
 # courses = (' History', 'Programming', 'Nath', 'Literature', 'Physics')
 #
 # courses.count('History')
+# numbers = [1, 4, 6, 8, 2, 3]
+# # print(sorted(numbers))        #сортирует по порядковому номеру
+# print(sum(numbers))      #суммирует цифровой ряд
+# print(min(numbers))             #выводит минимальное значение
+# print(max(numbers))             # максимальное значение
 #
+# courses = (' History', 'Programming', 'Nath', 'Literature', 'Physics')
+# print(min(courses))         #работают и со списками строк минимум ближе к букве А
+# print(max(courses))         #Максимум ближе к букве Z
+
+
+# random_list = [[9, 9], [1, 1, 1, 1], [1, 1]]
+# print(min(random_list))     #выводит максим и мин элементы листа
+# # print(max(random_list))
+# courses = (' History', 'Programming', 'Math', 'Literature', 'Physics')
+# # print(courses.index('Math'))              # Печатае порядковый номер слова Матч
+# # print(courses[courses.index('Math')])     # и выводит значение
+# # print('Math' in courses)   #конструкция возвражает булиан если этот элемент если есть в этом списке тру если есть и фолс если нет
+# if 'Math' in courses:                #Печатает окей если математика есть в курсе
+#     print('OK')
 #
+# courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
+# # corses_str = str(courses)     # конвертирует список в строку в том виде какой есть со скобками запятыми и тд
+# # print(corses_str)
+# courses_str = ' '.join(courses)      # если в апострофе пробелы то строка идёт через пробелы если запятые с пробелами то так и и дёт
+# print(courses_str)
+courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
+separator = ' '
+courses_str = separator.join(courses)      # если в апострофе пробелы то строка идёт через пробелы если запятые с пробелами то так и и дёт
+
+print(courses_str)
+new_list = courses_str.split()  #обратно переводит строку в лист () это пробел берёт пробулы из строки можно указать как выделить','
+print(new_list)
 # x = 5
 # student = {'name': 'John', 'age':32, 'courses': ['Math', 'Art', 'Programming'],
 #            1: 'int key', 0.2: 'float key', x: 'variable', 'var key': x}
