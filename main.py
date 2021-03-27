@@ -325,14 +325,14 @@
 # print(some_list[::-1])    #печатает весть список в обратном порядке
 # some_list
 #
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
 # courses.append('Art')   # метод append добаляет  элементы в конец списка
 # courses.insert(1, 'Engliish')   #inser добаляет на указанную позицию элемент
 # print(len(courses))      #len пишет длину списка
 #
 # print(courses)
 
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
 # courses2 = ['Art','English']
 # courses.extend(courses2)             #extend расширяет список в конце
 # print(courses)
@@ -346,7 +346,7 @@
 # print(courses)
 # print(deleted)            # метод *pop* запоминает что удалил
 
-# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
+# courses = ['History', 'Programming', 'Nath', 'Literature', 'Physics']
 # print(courses)                  #Печатает список в обратном порядке
 # courses.reverse()
 # print(courses)
@@ -376,7 +376,7 @@
 # numbers.sort()    #Сортирует по порядковому номеру
 # print(numbers)
 
-# courses = (' History', 'Programming', 'Nath', 'Literature', 'Physics')
+# courses = [' History', 'Programming', 'Nath', 'Literature', 'Physics']
 #
 # courses.count('History')
 # numbers = [1, 4, 6, 8, 2, 3]
@@ -435,6 +435,27 @@
 
 # цифры = [1, 4, 6, 8, 2, 3, 6, 6, 6, 6]
 # print(цифры.count(6))   # метод coint считает сколько у меня таких цифр
+#******************************
+# элемент  tuple кортеж обозначается круглыми скобками(), не изменяемый
+
+# друзья = ('Катя', 'Маша', 'Женя', 'Ира', 'Катя')
+# print(друзья[3])    #выдаёт Иру, переназвать нельзя у кортежа только 2 метода
+# print(друзья.count('Катя'))   #сколько раз искомое значение Катя 2 раза
+# друзья = ('Катя', 'Маша', 'Женя', 'Ира', 'Ира',)
+# друзья2 = ('Зарина', 'Мадина', 'Катя', 'Яна')      #кортеж нелья изменить но можно сложить
+# print(друзья + друзья2)     # или создать новый кортеж
+# новые_друзья = друзья + друзья2
+# print(новые_друзья)
+
+# прочитанные_книги = ('война и мир 1', 'война и мир 2', 'Пайтон для чайников')
+# # print(прочитанные_книги)
+# прочитанные_книги2 =('Незнайка на луне', 'Му му')
+# прочитанные_книги =list(прочитанные_книги)   #конвертировала кортеж в список все методы спика мможно применять
+# прочитанные_книги[1] = 'Незнайка на луне'    #индексировала 1 элемент
+# прочитанные_книги = tuple(прочитанные_книги)    #снова конвертировала в кортеж
+# print(прочитанные_книги)
+
+
 
 
 # x = 5
