@@ -578,58 +578,67 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 # for x in range(0, 10):
 #   print(x)
 
-for x in range(0, 101):
-    if x % 3 == 0 and x % 5 == 0:
-        print(x, ' FizzBuzz')
-    elif x % 3 == 0:
-        print(x, ' Fizz')
-    elif x % 5 == 0:
-        print(x, ' Buzz')
-        print(x)
+# for x in range(0, 101):
+#     if x % 3 == 0 and x % 5 == 0:   # если условие поставить в конец оно не будет выполнено
+#         print(x, ' FizzBuzz')
+#     elif x % 3 == 0:
+#         print(x, ' Fizz')
+#     elif x % 5 == 0:
+#         print(x, ' Buzz')
+#         print(x)
 
 
 # ******************************     5урок               ***************
 #
+# for letter in 'Hello world':    #выводит по символьно в столбик
+#     print(letter)
 #
-# for num in range(1, 101):
-#     if num % 3 ==0: and num % 5 == 0:     # не доделала доделать!!!!!!!
-#     print(num, "FizzBuzz")
-#     eli
-#         print(num, 'Fizz')
-#     elif num % 5 == 0:
-#         print(num, 'Buzz')
-#     elif num % 3 ==0 and num % 5 ==0:
 
 
 #
-# while True:                  # бесконечная прога
+# while True:                  # бесконечная прога услвно бесконечный цикл
 #     print('I can\'t stop')
+
+# condition = True
+# while condition:
+#     print('Привет!')
+
+# condition = True
+# cnt = 0
+#
+# while condition:               #дойдёт до 1000 но будет работать дальше
+#     if cnt < 1000:
+#         print(cnt)
+#         cnt = cnt + 1
+#
+
 # condition = True
 # cnt = 0
 # while condition:
-#     if cnt < 1000:
+#     if cnt < 1000:                   # счётчит дойдёт до 1000 условия поменяются на False
 #         print(cnt)
 #         cnt = cnt + 1
 #     elif cnt ==1000:
 #         condition = False
-#
-#         print('Конец')
-# #
+# print('Конец')
+# # #
 #
 # condition = True
 #
 # while condition:
-#    user_iput = input('Choiose:\n1: Chek ID\n2: Exit|n--> ')
-#    if user_iput == '1':
-#        input_id = input('Please enter ID')
+#    user_input = input('Введите:\n1: Chek ID\n2: Выход\n--> ')
+#
+#    if user_input == '1':
+#        input_id = input('Введите ID')
 #        if len(input_id) != 11:
-#            print('Error')
+#            print('Врёшь')
 #        else:
 #            print(input_id)
 #            condition = False
-#        elif user_iput == '2':
-#            condition = False
-#            print('Finished')
+#    elif user_input == '2':
+#       condition = False
+#
+# print('Конец')
 
 
 # distance_to_target = float(input('Please enter distance in meeters:'))
