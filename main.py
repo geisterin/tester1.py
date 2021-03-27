@@ -405,13 +405,38 @@
 # # print(corses_str)
 # courses_str = ' '.join(courses)      # если в апострофе пробелы то строка идёт через пробелы если запятые с пробелами то так и и дёт
 # print(courses_str)
-courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
-separator = ' '
-courses_str = separator.join(courses)      # если в апострофе пробелы то строка идёт через пробелы если запятые с пробелами то так и и дёт
+# courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
+# separator = ' '
+# courses_str = separator.join(courses)      # если в апострофе пробелы то строка идёт через пробелы если запятые с пробелами то так и и дёт
+#
+# print(courses_str)
+# new_list = courses_str.split()  #обратно переводит строку в лист () это пробел берёт пробулы из строки можно указать как выделить','
+# print(new_list)
 
-print(courses_str)
-new_list = courses_str.split()  #обратно переводит строку в лист () это пробел берёт пробулы из строки можно указать как выделить','
-print(new_list)
+# courses = ['History', 'Programming', 'Math', 'Literature', 'Physics']
+# numbers = [1, 4, 6, 8, 2, 3]
+# print(courses + numbers)      #складывает 2 списка
+# courses.extend(numbers)     # метод extend так же складывает два списка
+# print(courses)
+
+
+# имеем список создаём копию меняем в одной одно в другой другое значение
+
+# друзья = ['Катя', 'Маша', 'Женя', 'Ира']
+#
+# друзья2 = друзья.copy()
+# print(друзья)
+# print(друзья2)
+# друзья[0] = 'Мадина'
+# друзья2[1] ='Зарина'
+# print(друзья)
+# print(друзья2)
+
+
+# цифры = [1, 4, 6, 8, 2, 3, 6, 6, 6, 6]
+# print(цифры.count(6))   # метод coint считает сколько у меня таких цифр
+
+
 # x = 5
 # student = {'name': 'John', 'age':32, 'courses': ['Math', 'Art', 'Programming'],
 #            1: 'int key', 0.2: 'float key', x: 'variable', 'var key': x}
