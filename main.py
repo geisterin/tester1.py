@@ -767,27 +767,127 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 #     print(result)
 # finally:
 #     print('Конец работы')
-
-
+#*************************
+# user_input = input('Введите число ')
 #
+# try:
+#     user_input.insert('Hello')
+# except ValueError:
+#     print('Ошибка')
+# except AttributeError:
+#     print('Ложь')
+# else:
+#     pass
+# finally:
+#     print('Конец работы')
+# user_input = input('Введите ID: ')     #если буквы выводит что ошибка
+#
+# try:
+#     int(user_input)
+# except:
+#     print('Ошибка')
+#***********************************************************
+# user_input = input('Введите ID: ')
+#
+# try:
+#     int(user_input)
+#     if len(user_input) != 11:         #проверка на длину
+#         raise UserWarning
+# except UserWarning:
+#     print('Не обманывайте меня это не 11 цифр!')
+# except:
+#     print('Врёшь! Это не цифры!')
+#******************************* исикукод  --меню!!!-----
+
 # def user_menu():
-#     user_choce = input('Please choose:\n1.Get data by ID code\n/Chec if ID is valid\n3.Exit\n-->')
-#     if user_choce =='1':
-#         try:
-#             user_id = int(input('Please enter ID: '))
-#             if len(user_id) != 11:
-#                 raise UserWarning
-#
-#     elif user_choce =='2':
+#     user_choice = input('Please choose:\n1.Get data by ID code\n2.Check if ID is valid\n3.Exit\n-->')
+#     if user_choice =='1':
 #         pass
-#     elif user_choce =='3':
+#     elif user_choice =='2':
+#         pass
+#     elif user_choice =='3':
 #         quit()
 #     else:
-#         print('Choise out of range')
+#         print('Такого не может быть')
 #         user_menu()
-#
-#         def get_data_by_id(idcode):
-#             print(idcode)
+# user_menu()
+#*******************************************************
+def user_menu():
+    user_choice = input('Введите цифры:\n1.Введите код\n2.Проверка исикукода\n3.Выход\n-->')
+    if user_choice == '1':
+        condition = True
+        while condition:
+            try:
+                user_id = input('Пожалуйста введите правильный ID: ')
+                int(user_id)
+                if len(user_id) != 11:
+                    raise UserWarning
+            except UserWarning:
+                if len(user_id) > 11:
+                    print('Код слишком длинный')
+                elif len(user_id) < 11:
+                    print('Код слишком короткий!!!')
+            except:
+                print('Введённый код не является цифрами!')
+            else:
+                condition = False
+                get_data_by_id(user_id)
+    elif user_choice =='2':
+        pass
+    elif user_choice =='3':
+        quit()
+    else:
+        print('Такого не может быть')
+        user_menu()
+def get_data_by_id(idcode):
+
+    gender_num = idcode[0]
+    by_num = idcode[1:3]
+    bm_num = idcode[3:5]
+    bd_num = idcode[5:7]
+    region_num = idcode[7:10]
+    chk_num = idcode[10]
+    # print(gender_num, by_num, bm_num, bd_num, region_num, chk_num)
+
+    if gender_num == '1':
+        cent_id ='18'
+        geng_id = 'Мужчина'
+    elif gender_num =='2':
+        cent_id = '18'
+        geng_id = 'Женщина'
+    elif gender_num == '3':
+        cent_id ='19'
+        geng_id = 'Мужчина'
+    elif gender_num =='4':
+        cent_id = '19'
+        geng_id = 'Женщина'
+    elif gender_num == '5':
+        cent_id ='20'
+        geng_id = 'Мужчина'
+    elif gender_num =='6':
+        cent_id = '20'
+        geng_id = 'Женщина'
+    print('Ваш исикукод: ', (idcode))
+    print('Вы '+ geng_id)
+    print('Вы родились ' + bd_num + '.' +bm_num +'.' + cent_id + by_num)
+
+
+
+user_menu()
+
+
+
+
+
+
+
+
+
+
+
+
+        # def get_data_by_id(idcode):
+        #     print(idcode)
 #      ********************** Урок 6 ***************************
 #
 # def user_menu():
