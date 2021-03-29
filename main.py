@@ -870,24 +870,14 @@ def get_data_by_id(idcode):
     print('Ваш исикукод: ', (idcode))
     print('Вы '+ geng_id)
     print('Вы родились ' + bd_num + '.' +bm_num +'.' + cent_id + by_num)
-
-
+id = '38803160272'
+def check_id(id_code):
+    print(id_code)
 
 user_menu()
 
 
 
-
-
-
-
-
-
-
-
-
-        # def get_data_by_id(idcode):
-        #     print(idcode)
 #      ********************** Урок 6 ***************************
 #
 # def user_menu():
