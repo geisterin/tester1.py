@@ -701,27 +701,73 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 #         continue
 #     print('Текущее значение переменных :', var)
 # print("Пока!")
+#***********************
 
-
-# distance_to_target = float(input('Введите дистанцию в метрах: '))
-# current_position = 0           #стартовая точка откуда начинаю двигаться 0
-# step = 0
-# while current_position = current_position + 0.5
-#     step_cnt = step_cnt +1
-#     print(current_position)
-#
-# print('Finished')
-# #
-
-#
-# some_string = 'Hello world'
+# some_string = 'Привет мир'      #Печатает по буквам
 #
 # print(list(some_string))
+#****************************
+# def number_squares():
+#     return'Привет Дракон'
+# message = number_squares()
+#
+# print(message)
+#******************************
+# def number_squares(x):
+#     return x ** 2
+# print(number_squares(100))
+#**************************
+# def number_squares(x):
+#     return x ** 2
+# def number_double(x):
+#     return x *2
+# def number_tripple(x):
+#     return x * 3
+# for number in range(0, 101):
+#     print(number_squares(number))
+#     print(number_double(number))
+#     print(number_tripple(number))
+#     print()
+#************
+
+# def number_power(x, y):
+#     return x ** y
+# print(number_power(10, 10))
+#
+#***********
+
+# def squres():
+#     x = 5
+#     return x ** y
+# y = 2
+# print(squres())
+
+#******************2 часть 5го урока
+
+# user_input = input('Введите число ')
+# if user_input.isdigit() == True: #если строка состоит из цифр и еслии это верно то будет считать если нет то не будет
+#     result = float(user_input) ** 2
+#     print(result)
 
 
-# user_input = input('Введите число')
-# result = float(user_input ** 2
-# print(result)
+# user_input = input('Введите число ')
+# result = float(user_input)
+# try:
+#     result = float(user_input) ** 2
+# except:
+#     print('Ошибка')
+
+# user_input = input('Введите число ')
+#
+# try:
+#     result = float(user_input) ** 2
+# except:
+#     print('Ошибка')
+# else:
+#     print(result)
+# finally:
+#     print('Конец работы')
+
 
 #
 # def user_menu():
