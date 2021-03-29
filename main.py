@@ -623,6 +623,8 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 # print('Конец')
 # # #
 #
+
+
 # condition = True
 #
 # while condition:
@@ -639,10 +641,70 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 #       condition = False
 #
 # print('Конец')
+#
+# **************************************************************
+#
+#
+# distance_to_target = float(input('Введите дистанцию в метрах: '))
+# current_position = 0           #стартовая точка откуда начинаю двигаться 0
+# step_cnt = 0
+# while current_position < distance_to_target:
+#     current_position = current_position + 0.5
+#     step_cnt = step_cnt + 1
+#     print(current_position)
+#
+# print(step_cnt)                  #Количество шагов
+# print('Конец')
+# ******************************
+#
+# cnt = 0
+# while cnt < 1000:
+#     cnt += 1
+#     print(cnt)
+#     if cnt == 1000:
+#         break    #команда break разрывает цикл и не даст напечатать тест
+#     print('TEST')
+# print('Конец работы')
 
 
-# distance_to_target = float(input('Please enter distance in meeters:'))
-# current_position = 0
+# condition = True
+# cnt = 0
+# while condition:
+#     cnt += 1
+#     print(cnt)
+#     if cnt == 1000:
+#         condition = False
+#     print('TEST')
+#*******************************************
+# while True:
+#     user_input = input('Please choose:\n1:Print\n0:Exit')
+#     if user_input =='1':
+#         print('Всё хорошо')
+#         continue
+#     elif user_input =='0':
+#         break
+#     else:
+#         pass
+#     print('test')
+# print('Вы вышли из цикла')
+#*********************************
+# for letter in 'Python':
+#     if letter =='h':
+#         continue
+#     print('Печатаю :', letter)
+
+#***********
+# var = 10
+# while var > 0:
+#     var = var - 1
+#     if var == 5:
+#         continue
+#     print('Текущее значение переменных :', var)
+# print("Пока!")
+
+
+# distance_to_target = float(input('Введите дистанцию в метрах: '))
+# current_position = 0           #стартовая точка откуда начинаю двигаться 0
 # step = 0
 # while current_position = current_position + 0.5
 #     step_cnt = step_cnt +1
@@ -680,3 +742,109 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 #
 #         def get_data_by_id(idcode):
 #             print(idcode)
+#      ********************** Урок 6 ***************************
+#
+# def user_menu():
+#     user_choice = input('Please choose:\n1.Get data by ID code\n2.Check if ID is valid\n3.Exit\n-->')
+#     if user_choice == '1':
+#         condition = True
+#         while condition:
+#             try:
+#                 user_id = input('Please enter ID: ')
+#                 int(user_id)
+#                 if len(user_id) != 11:
+#                     raise UserWarning
+#             except UserWarning:
+#                 if len(user_id) < 11:
+#                     print('Code is too short')
+#                 elif len(user_id) > 11:
+#                     print('Code is too long')
+#             except:
+#                 print('Code you entered is not numeric')
+#             else:
+#                 condition = False
+#                 get_data_by_id(user_id)
+#
+#
+#     elif user_choice == '2':
+#         pass
+#     elif user_choice == '3':
+#         quit()
+#     else:
+#         print('Choice out of range')
+#         user_menu()
+#
+# def get_data_by_id(idcode):
+#     gender_num = idcode[0]
+#     by_num = idcode[1:3]
+#     bm_num = idcode[3:5]
+#     bd_num = idcode[5:7]
+#     region_num = idcode[7:10]
+#     chk_num = idcode[10]
+#
+#     if gender_num == '1':
+#         cent_id = '18'
+#         gend_id = 'Male'
+#     elif gender_num == '2':
+#         cent_id = '18'
+#         gend_id = 'Female'
+#     elif gender_num == '3':
+#         cent_id = '19'
+#         gend_id = 'Male'
+#     elif gender_num == '4':
+#         cent_id = '19'
+#         gend_id = 'Female'
+#     elif gender_num == '5':
+#         cent_id = '20'
+#         gend_id = 'Male'
+#     elif gender_num == '6':
+#         cent_id = '20'
+#         gend_id = 'Female'
+#
+#     print(idcode)
+#     print('You are ' + gend_id)
+#     print('You were born in ' + bd_num + '.' + bm_num + '.' + cent_id + by_num)
+#
+#     user_menu()
+#
+# user_menu()
+#
+# chk_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1]
+# chk_2 = [3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+#
+# id_code ='38803160272'
+# result = 0
+# for num in range(0, 10):
+#     result+=chk_1[num] * int(id_code[num])
+#
+# if result % 11 != id_code[-1]:
+#     result = 0
+#     for num in range(0, 10):
+#         result += chk_2[num] * int(id_code[num])
+#         if result % 11 == int(id_code[-1]):
+#             print('ID Code is valid')
+#             else
+#                print('ID Code is valid')
+#         else:
+#             print('Id Code is not valid')
+# else:
+# print('ID Code is valid')
+
+
+#
+# def squares(x):
+#     return  x ** 2
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# for x in numbers:
+#     nu _list.append(squares(x))
+#
+#
+# print(numbers_list)
+
+# def squares(x):
+#     return  x ** 2
+# numbers + [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# print = list(map(squares, numbers))
+# print(reslt)
+#
+# print([squares(x) for x numbers if x % 2 ==0])
