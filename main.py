@@ -813,8 +813,28 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 # user_menu()
 #*******************************************************
 def user_menu():
+    condition = True
+    while condition:
+        try:
+            user_id = input('Пожалуйста введите правильный ID: ')
+            int(user_id)
+            if len(user_id) != 11:
+                raise UserWarning
+        except UserWarning:
+            if len(user_id) > 11:
+                print('Код слишком длинный')
+            elif len(user_id) < 11:
+                print('Код слишком короткий!!!')
+        except:
+            print('Введённый код не является цифрами!')
+        else:
+            condition = False
+            return user_id
+
     user_choice = input('Введите цифры:\n1.Введите код\n2.Проверка исикукода\n3.Выход\n-->')
     if user_choice == '1':
+        get_data_by_id(user_id)
+    elif user_choice =='2':
         condition = True
         while condition:
             try:
@@ -831,14 +851,15 @@ def user_menu():
                 print('Введённый код не является цифрами!')
             else:
                 condition = False
-                get_data_by_id(user_id)
-    elif user_choice =='2':
-        pass
+                check_id(user_id)
     elif user_choice =='3':
         quit()
     else:
         print('Такого не может быть')
         user_menu()
+
+def check_id(id_code):
+    pass
 def get_data_by_id(idcode):
 
     gender_num = idcode[0]
