@@ -869,34 +869,34 @@ def get_data_by_id(idcode):
     region_num = idcode[7:10]
     chk_num = idcode[10]
     # print(gender_num, by_num, bm_num, bd_num, region_num, chk_num)
-
-    if gender_num == '1':
-        cent_id ='18'
-        geng_id = 'Мужчина'
-    elif gender_num =='2':
-        cent_id = '18'
-        geng_id = 'Женщина'
-    elif gender_num == '3':
-        cent_id ='19'
-        geng_id = 'Мужчина'
-    elif gender_num =='4':
-        cent_id = '19'
-        geng_id = 'Женщина'
-    elif gender_num == '5':
-        cent_id ='20'
-        geng_id = 'Мужчина'
-    elif gender_num =='6':
-        cent_id = '20'
-        geng_id = 'Женщина'
-    print('Ваш исикукод: ', (idcode))
-    print('Вы '+ geng_id)
-    print('Вы родились ' + bd_num + '.' +bm_num +'.' + cent_id + by_num)
-id = '38803160272'
-def check_id(id_code):
-    print(id_code)
-
-user_menu()
-
+#
+#     if gender_num == '1':
+#         cent_id ='18'
+#         geng_id = 'Мужчина'
+#     elif gender_num =='2':
+#         cent_id = '18'
+#         geng_id = 'Женщина'
+#     elif gender_num == '3':
+#         cent_id ='19'
+#         geng_id = 'Мужчина'
+#     elif gender_num =='4':
+#         cent_id = '19'
+#         geng_id = 'Женщина'
+#     elif gender_num == '5':
+#         cent_id ='20'
+#         geng_id = 'Мужчина'
+#     elif gender_num =='6':
+#         cent_id = '20'
+#         geng_id = 'Женщина'
+#     print('Ваш исикукод: ', (idcode))
+#     print('Вы '+ geng_id)
+#     print('Вы родились ' + bd_num + '.' +bm_num +'.' + cent_id + by_num)
+# id = '38803160272'
+# def check_id(id_code):
+#     print(id_code)
+#
+# user_menu()
+#
 
 
 #      ********************** Урок 6 ***************************
@@ -1005,3 +1005,44 @@ user_menu()
 # print(reslt)
 #
 # print([squares(x) for x numbers if x % 2 ==0])
+
+#*************************************************
+# def squares(x):
+#     return x ** 2
+#
+# numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9]
+# # numbers_list =[]
+# #
+# # for x in numbers:
+# #     numbers_list.append(squares(x))
+# #
+# # print(numbers_list)
+#
+# # result = list(map(squares, numbers))
+# # print(result)
+#
+# print([squares(x) for x in numbers if x % 2 == 0])
+# **********************************************************
+# data1 = [100, 200, 300, 400, 500, 600, 700]
+# data2 = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+# data3 = [1, 2, 3, 4, 5, 6, 7]
+#
+# combination = zip(data1, data2, data3)
+# # print(list(combination))
+# def func(num1, num2):
+#     return num1 * num2
+# #
+# # for x, y, z in combination:
+# #     print(func(x, z))
+# print(list(map(func, data1, data3)))
+#***********************************
+
+import calendar
+# print(calendar.month(2021, 3, w=5, l=1))
+print(calendar.calendar(2021, w=1, l=1, c=10, m=3))    #где w-расстояние между неделями, l-между строками c-между месяцами и m - сколько месяцев в одну строчку
+
+
+
+
+
+
