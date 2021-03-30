@@ -1038,9 +1038,12 @@ def get_data_by_id(idcode):
 #***********************************
 
 import calendar
-# print(calendar.month(2021, 3, w=5, l=1))
-print(calendar.calendar(2021, w=1, l=1, c=10, m=3))    #где w-расстояние между неделями, l-между строками c-между месяцами и m - сколько месяцев в одну строчку
+# # print(calendar.month(2021, 3, w=5, l=1))
+# print(calendar.calendar(2021, w=1, l=1, c=10, m=3))    #где w-расстояние между неделями, l-между строками c-между месяцами и m - сколько месяцев в одну строчку
 
+# print(calendar.weekday(2021, 3, 28))
+# print(calendar.isleap(2021)) #позволяет проверить високосный или нет
+# print(calendar.leapdays(2000, 2021))
 
 
 
