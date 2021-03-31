@@ -446,7 +446,7 @@
 # print(друзья + друзья2)     # или создать новый кортеж
 # новые_друзья = друзья + друзья2
 # print(новые_друзья)
-
+#
 # прочитанные_книги = ('война и мир 1', 'война и мир 2', 'Пайтон для чайников')
 # # print(прочитанные_книги)
 # прочитанные_книги2 =('Незнайка на луне', 'Му му')
@@ -550,9 +550,9 @@
 #         print(x,'Нечётное')
 # print('конец')
 
-x = 5
-student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика', 'Питон', 'Пентест'],
-           1: 'int key', 0.2: 'float key', x: 'variable', 'var key': x}
+# x = 5
+# student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика', 'Питон', 'Пентест'],
+#            1: 'int key', 0.2: 'float key', x: 'variable', 'var key': x}
 
 # for x in student:
 #     print(x)          #печатает все ключи
@@ -812,63 +812,63 @@ student = {'Имя': 'Джон', 'age': 32, 'курсы': ['Математика
 #         user_menu()
 # user_menu()
 #*******************************************************
-def user_menu():
-    condition = True
-    while condition:
-        try:
-            user_id = input('Пожалуйста введите правильный ID: ')
-            int(user_id)
-            if len(user_id) != 11:
-                raise UserWarning
-        except UserWarning:
-            if len(user_id) > 11:
-                print('Код слишком длинный')
-            elif len(user_id) < 11:
-                print('Код слишком короткий!!!')
-        except:
-            print('Введённый код не является цифрами!')
-        else:
-            condition = False
-            return user_id
-
-    user_choice = input('Введите цифры:\n1.Введите код\n2.Проверка исикукода\n3.Выход\n-->')
-    if user_choice == '1':
-        get_data_by_id(user_id)
-    elif user_choice =='2':
-        condition = True
-        while condition:
-            try:
-                user_id = input('Пожалуйста введите правильный ID: ')
-                int(user_id)
-                if len(user_id) != 11:
-                    raise UserWarning
-            except UserWarning:
-                if len(user_id) > 11:
-                    print('Код слишком длинный')
-                elif len(user_id) < 11:
-                    print('Код слишком короткий!!!')
-            except:
-                print('Введённый код не является цифрами!')
-            else:
-                condition = False
-                check_id(user_id)
-    elif user_choice =='3':
-        quit()
-    else:
-        print('Такого не может быть')
-        user_menu()
-
-def check_id(id_code):
-    pass
-def get_data_by_id(idcode):
-
-    gender_num = idcode[0]
-    by_num = idcode[1:3]
-    bm_num = idcode[3:5]
-    bd_num = idcode[5:7]
-    region_num = idcode[7:10]
-    chk_num = idcode[10]
-    # print(gender_num, by_num, bm_num, bd_num, region_num, chk_num)
+# def user_menu():
+#     condition = True
+#     while condition:
+#         try:
+#             user_id = input('Пожалуйста введите правильный ID: ')
+#             int(user_id)
+#             if len(user_id) != 11:
+#                 raise UserWarning
+#         except UserWarning:
+#             if len(user_id) > 11:
+#                 print('Код слишком длинный')
+#             elif len(user_id) < 11:
+#                 print('Код слишком короткий!!!')
+#         except:
+#             print('Введённый код не является цифрами!')
+#         else:
+#             condition = False
+#             return user_id
+#
+#     user_choice = input('Введите цифры:\n1.Введите код\n2.Проверка исикукода\n3.Выход\n-->')
+#     if user_choice == '1':
+#         get_data_by_id(user_id)
+#     elif user_choice =='2':
+#         condition = True
+#         while condition:
+#             try:
+#                 user_id = input('Пожалуйста введите правильный ID: ')
+#                 int(user_id)
+#                 if len(user_id) != 11:
+#                     raise UserWarning
+#             except UserWarning:
+#                 if len(user_id) > 11:
+#                     print('Код слишком длинный')
+#                 elif len(user_id) < 11:
+#                     print('Код слишком короткий!!!')
+#             except:
+#                 print('Введённый код не является цифрами!')
+#             else:
+#                 condition = False
+#                 check_id(user_id)
+#     elif user_choice =='3':
+#         quit()
+#     else:
+#         print('Такого не может быть')
+#         user_menu()
+#
+# def check_id(id_code):
+#     pass
+# def get_data_by_id(idcode):
+#
+#     gender_num = idcode[0]
+#     by_num = idcode[1:3]
+#     bm_num = idcode[3:5]
+#     bd_num = idcode[5:7]
+#     region_num = idcode[7:10]
+#     chk_num = idcode[10]
+#     # print(gender_num, by_num, bm_num, bd_num, region_num, chk_num)
 #
 #     if gender_num == '1':
 #         cent_id ='18'
@@ -1036,15 +1036,93 @@ def get_data_by_id(idcode):
 # #     print(func(x, z))
 # print(list(map(func, data1, data3)))
 #***********************************
-
-import calendar
+#
+# import calendar
 # # print(calendar.month(2021, 3, w=5, l=1))
 # print(calendar.calendar(2021, w=1, l=1, c=10, m=3))    #где w-расстояние между неделями, l-между строками c-между месяцами и m - сколько месяцев в одну строчку
-
+#
 # print(calendar.weekday(2021, 3, 28))
 # print(calendar.isleap(2021)) #позволяет проверить високосный или нет
 # print(calendar.leapdays(2000, 2021))
 
+# import time
+# print('Hello world')
+#
+# time.sleep(7)
+# print('Hello world')
+#
+# import time
+# print(time.time())   #unix время
+# print(time.asctime())   # нормальная дата и время
+# print(time.gmtime())          #структурированное время
+# print(type(time.gmtime()))
+#
+# import time
+# start = time.time()   #запуск программы
+# time.sleep(7)         #задана задержка 7 секунд
+#
+# print(time.gmtime())
+# print(time.gmtime()[0])     #в квадратных скобках указываем что надо индексировать
+#
+# now = time.gmtime()         #другой способ индексировать время
+# print(now[2])
+# stop = time.time()  #остановка программы
+# print(stop - start)      #выводится время что работала прога (7 секунд)
+
+# import datetime
+# date = datetime.date(2018, 7, 22)
+# print(date)
+# today = datetime.date.today()            #показыввает сегодняшнюю дату
+# # print(today)
+# # print(today - date)   #разница в днях между 2мя датами
+# print(today.year)            #просто сегодняшний год
+# print(today.day)    #число
+# print(today.month)
+# print(today.isoweekday())     #сколько дней до воскресенья
+
+
+# today - some_date = timedelta
+# todey = timedelta + some_date
+# some_date = today - timedelta
+
+
+# import datetime
+#
+# today = datetime.date.today()
+# tdelta = datetime.timedelta(days=31)   #от сегодняшнего числа через 31 день будет 1 мая
+# print(today + tdelta)
+#
+#
+# bday = datetime.date(2021, 6, 6)   #сколько дней до моего рождения
+# till_bday = bday - today
+# print(till_bday)
+# print(till_bday.days)
+
+import datetime
+t = datetime.time(13, 27, 19)   #указыввется время
+print(t)
+print(type(t))
+print(t.hour)
+print(t.second)
+
+dt = datetime.datetime(2020, 11, 30, 18, 53)               #полноценная дата с временем числом и тд
+print(dt)
+print(dt.date())
+print(dt.time())
+dt_today = datetime.datetime.today()
+print(dt_today)
+
+
+
+
+
+
+
+
+
+
+
+#*********************** 7Урок*********************
 
 
 
