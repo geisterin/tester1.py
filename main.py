@@ -1126,9 +1126,9 @@ dt_today = datetime.datetime.today()
 print(dt_today.strftime('%A %B %d, %y'))           #есть сайт где прописаны форматы '%A %B %d, %y можно прописать формат вывода
 dt_string = 'November 30, 2020'
 dt_string2 = 'Sun, 28.03.2021, March'
-str_to_date = datetime.datetime.strptime(dt_string,'%B %d, % ')
+str_to_date = datetime.datetime.strptime(dt_string, '%B %d, %Y')
 print(str_to_date)
-
+str_date2 = datetime.datetime.strptime(dt_string2, '%a, %d.%m.%Y, %B')
 
 #*********************** 7Урок*********************
 
