@@ -1098,28 +1098,36 @@
 # print(till_bday)
 # print(till_bday.days)
 
-import datetime
-t = datetime.time(13, 27, 19)   #указыввется время
-print(t)
-print(type(t))
-print(t.hour)
-print(t.second)
+# import datetime
+# t = datetime.time(13, 27, 19)   #указыввется время
+# print(t)
+# print(type(t))
+# print(t.hour)
+# print(t.second)
+#
+# dt = datetime.datetime(2020, 11, 30, 18, 53)               #полноценная дата с временем числом и тд
+# print(dt)
+# print(dt.date())
+# print(dt.time())
+# dt_today = datetime.datetime.today()
+# print(dt_today)
 
-dt = datetime.datetime(2020, 11, 30, 18, 53)               #полноценная дата с временем числом и тд
-print(dt)
+
+
+
+import datetime
+t = datetime.time(13, 27, 19)
+dt = datetime.datetime(2020, 11, 30, 18, 53)
+
+
 print(dt.date())
 print(dt.time())
 dt_today = datetime.datetime.today()
-print(dt_today)
-
-
-
-
-
-
-
-
-
+print(dt_today.strftime('%A %B %d, %y'))           #есть сайт где прописаны форматы '%A %B %d, %y можно прописать формат вывода
+dt_string = 'November 30, 2020'
+dt_string2 = 'Sun, 28.03.2021, March'
+str_to_date = datetime.datetime.strptime(dt_string,'%B %d, % ')
+print(str_to_date)
 
 
 #*********************** 7Урок*********************
