@@ -27,4 +27,4 @@ json_string = '''
 }
 data = json.loads(json_string)
 print(type(data))
-print(data)
+# print(data)
