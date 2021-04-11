@@ -5,3 +5,4 @@ if a == 'Codebay':
 else:
     print('Hello World')
 
+help("keywords")
